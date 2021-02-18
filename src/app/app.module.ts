@@ -11,6 +11,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { CheckoutComponent } from './Pages/checkout/checkout.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { BannerComponent } from './Components/banner/banner.component'
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BannerComponent } from './Components/banner/banner.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
     
   ],
   providers: [],
