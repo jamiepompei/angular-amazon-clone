@@ -9,6 +9,9 @@
 .header_menu{
     display: flex;
 }
+.header_menu > div {
+    margin: 8px;
+}
 .header_menu_logo{
     object-fit: contain;
     width: 100px;
