@@ -12,6 +12,7 @@ import { CheckoutComponent } from './Pages/checkout/checkout.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { BannerComponent } from './Components/banner/banner.component'
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
     
   ],
   providers: [],
