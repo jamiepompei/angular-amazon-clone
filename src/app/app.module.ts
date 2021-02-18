@@ -13,6 +13,7 @@ import { LoginComponent } from './Pages/login/login.component';
 import { BannerComponent } from './Components/banner/banner.component'
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './Components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     CheckoutComponent,
     LoginComponent,
       HeaderComponent,
-      BannerComponent
+      BannerComponent,
+      ProductsComponent
   ],
   imports: [
     BrowserModule,
