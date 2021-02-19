@@ -18,4 +18,7 @@ export class CheckoutComponent implements OnInit {
   getShoppingCart(){
     this.items = this.shopping_cart.get_shopping_cart_items();
   }
+  deleteEventHandler(p: any){
+    this.getShoppingCart();
+  }
 }
