@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './Components/products/products.component';
 import { CheckoutProductsComponent } from './Components/checkout-products/checkout-products.component';
 import { CheckoutSubtotalComponent } from './Components/checkout-subtotal/checkout-subtotal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CheckoutSubtotalComponent } from './Components/checkout-subtotal/checko
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
