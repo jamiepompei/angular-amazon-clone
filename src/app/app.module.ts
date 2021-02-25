@@ -17,6 +17,8 @@ import { ProductsComponent } from './Components/products/products.component';
 import { CheckoutProductsComponent } from './Components/checkout-products/checkout-products.component';
 import { CheckoutSubtotalComponent } from './Components/checkout-subtotal/checkout-subtotal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { firebaseConfig } from './Config/Firebase.config';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatCardModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(firebaseConfig)
     
   ],
   providers: [],

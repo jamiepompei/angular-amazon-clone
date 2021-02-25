@@ -1,5 +1,5 @@
 export const firebaseConfig = {
-    apiKey: ,
+    apiKey: "AIzaSyB2jIXw0m6ilo_cYJS6mZAouTG35X6IJi8",
     authDomain: "cloneangular-7d98a.firebaseapp.com",
     projectId: "cloneangular-7d98a",
     storageBucket: "cloneangular-7d98a.appspot.com",
