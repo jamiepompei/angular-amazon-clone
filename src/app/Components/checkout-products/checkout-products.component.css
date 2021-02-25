@@ -72,6 +72,9 @@
     font-size: 17px!important;
     line-height: 1.255!important;
 }
+.subtotal_bottom{
+    margin-top: 10px;
+}
 mat-form-field{
     background-color: gray;
 }

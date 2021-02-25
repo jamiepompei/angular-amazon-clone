@@ -19,6 +19,7 @@ import { CheckoutSubtotalComponent } from './Components/checkout-subtotal/checko
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { firebaseConfig } from './Config/Firebase.config';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { firebaseConfig } from './Config/Firebase.config';
       BannerComponent,
       ProductsComponent,
       CheckoutProductsComponent,
-      CheckoutSubtotalComponent
+      CheckoutSubtotalComponent,
+      ErrorComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@
             <p>You have no items in your basket.</p>
         </div>
         <div class="checkout_not_empty" *ngIf="shopping_cart.getCartLength() != 0">
-            <p><strong>Shopping Cart</strong></p>
+            <h2 class="shopping_cart_title"><strong>Shopping Cart</strong></h2>
             <app-checkout-products [checkout_products] = "items" (deleteEvent)="deleteEventHandler($event)"></app-checkout-products>
         </div>
     </div>
