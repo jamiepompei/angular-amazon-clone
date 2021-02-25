@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cloneangular-7d98a": {
+      "hosting": {
+        "amazon-clone": [
+          "cloneangular-7d98a"
+        ]
+      }
+    }
+  }
+}

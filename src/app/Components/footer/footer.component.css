@@ -1,7 +1,9 @@
 .footer{
-    height: 60px;
-    display:flex;
+    padding: 30px 0;
+    margin: 30px 0 0;
     background-color: #232f3e;
-    z-index: 100;
-    width: 100%;
+    min-width: 100px;
+    position: relative;
+    position: sticky;
 }
+
