@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { firebaseConfig } from './Config/Firebase.config';
 import { ErrorComponent } from './error/error.component';
+import { ProductDetailComponent } from './Components/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ErrorComponent } from './error/error.component';
       ProductsComponent,
       CheckoutProductsComponent,
       CheckoutSubtotalComponent,
-      ErrorComponent
+      ErrorComponent,
+      ProductDetailComponent
   ],
   imports: [
     BrowserModule,

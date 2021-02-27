@@ -3,7 +3,7 @@
         <mat-card>
             <p>{{ item.title }}</p>
             <p>$ <strong>{{ item.price }}</strong></p>
-            <img src="{{ item.image }}" (click)="selectProduct()">
+            <img src="{{ item.image }}" (click)="selectProduct(item)">
             <button (click)="addToCart(item)">Add to cart</button>
         </mat-card>
     </div>

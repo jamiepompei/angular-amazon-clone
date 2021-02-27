@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/Services/api.service';
+import { Router } from '@angular/router';
+import { ProductDetailComponent } from 'src/app/Components/product-detail/product-detail.component';
+import { ApiService, ProductResponse } from 'src/app/Services/api.service';
+
+
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,12 @@ import { ApiService } from 'src/app/Services/api.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  items!: any [];
+  items: any = [];
+  product: ProductResponse;
+  id: number;
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getProducts();
@@ -18,6 +25,22 @@ export class HomeComponent implements OnInit {
   getProducts(){
     this.api.getJson().subscribe(response => {
       this.items = response;
+    })
+  }
+ 
+  getProductsById(){
+    this.api.getProductById(this.id).subscribe(response => {
+      const obj= response;
+      this.product =  new ProductResponse(
+        obj.id,
+        obj.title,
+        obj.desc,
+        obj.price,
+        obj.image,
+        obj.ratings
+      );
+      console.log(this.product);
+     
     })
   }
 
