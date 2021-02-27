@@ -7,8 +7,8 @@
             <p>{{ item.title }}</p>
             <p>$<strong>{{ item.price }}</strong></p>
             <img src="{{ item.image }}">
-            <p><strong>{{ item.desc }}</strong></p>
-            <button>Add to cart</button>
+            <p class="item_desc"><strong>{{ item.desc }}</strong></p>
+            <button (click)="addToCart(item)">Add to cart</button>
         </mat-card>
     </div>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/Services/api.service';
+import { ShoppingCartService } from 'src/app/Services/shopping-cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -10,7 +11,8 @@ import { ApiService } from 'src/app/Services/api.service';
 export class ProductDetailComponent implements OnInit {
   item: any;
 
-  constructor(private route: ActivatedRoute, private router: Router, private api: ApiService) { 
+  constructor(private route: ActivatedRoute, private router: Router, private api: ApiService,
+    private shopping_cart: ShoppingCartService) { 
     this.route.queryParams.subscribe(param =>{
       console.log('params', param);
       if(this.router.getCurrentNavigation().extras.state){
@@ -28,6 +30,10 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit(): void {
     let id = this.route.snapshot.paramMap.get('id');
     console.log('id:', id);
+  }
+
+  addToCart(p: any){
+    this.shopping_cart.addProduct(p);
   }
 
 }
